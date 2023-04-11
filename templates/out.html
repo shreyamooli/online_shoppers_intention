@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Prediction </title>
+</head>
+<body>
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Project</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Go Back</a>
+    </nav>
+
+
+    <center>
+        <h1 class="my-3 py-2">
+            Enter the Features
+        </h1>
+
+        <div class="contianer">
+
+            <form class="needs-validation" novalidate="" method="POST" action='/features'>
+
+                <h5 class="my-2 py-1"><b>Product Related</b> </h5>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 ">
+                            <label for="number">Number of pages visited</label>
+                            <input type="number" class="form-control" id="firstName" placeholder="" name="pro_page"
+                                value="" required="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Time">Time Spent (s)</label>
+                            <input type="number" inputmode="decimal" class="form-control" id="lastName" placeholder=""
+                                name="pro_time" value="" required="">
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="my-2 py-1"><b>Information Related</b> </h5>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 ">
+                            <label for="number">Number of pages visited</label>
+                            <input type="number" class="form-control" id="firstName" placeholder="" name="inf_page"
+                                value="" required="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Time">Time Spent (s)</label>
+                            <input type="number" inputmode="decimal" class="form-control" id="lastName" placeholder=""
+                                name="inf_time" value="" required="">
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="my-2 py-1"><b>Administrative Related</b> </h5>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 mb-4 ">
+                            <label for="number">Number of pages visited</label>
+                            <input type="number" class="form-control" id="firstName" placeholder="" name="adm_page"
+                                value="" required="">
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="Time">Time Spent (s)</label>
+                            <input type="number" inputmode="decimal" class="form-control" id="lastName" placeholder=""
+                                name="adm_time" value="" required="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Visitor Type (Ranges from 0 to 1)</b> </h5>
+                    </label>
+                    <input type="number" inputmode="decimal" class="form-control" id="lastName" placeholder=""
+                        name="spec_day" value="" required="">
+                </div>
+
+                <div class="container">
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Special Day</b> </h5>
+                    </label>
+                    <select class="custom-select d-block w-100" id="country" name='spec_day' required="">
+                        <option value="">Choose...</option>
+                        <option>Returning Visitor</option>
+                        <option>New Visitor</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+
+                <h5 class="my-2 py-1"><b>Page Value</b> </h5>
+                <div class="container">
+                    <label for="country">
+                    </label>
+                    <input type="number" class="form-control" id="firstName" placeholder="" value="" name="pageValue"
+                        required="">
+                </div>
+
+                <div class="container">
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Region</b> </h5>
+                    </label>
+                    <select class="custom-select d-block w-100" id="country" name='month' required="">
+                        <option value="">Choose...</option>
+                        <option>United States</option>
+                        <option>Germany</option>
+                        <option>India</option>
+                        <option>France</option>
+                        <option>United Kingdom</option>
+                        <option>Brazil</option>
+                        <option>Italy</option>
+                        <option>Austalia</option>
+                        <option>Spain</option>
+
+                    </select>
+                </div>
+
+
+                <div class="container">
+                    <label for="country">
+                        <h5 class="my-4 py-0"><b>Month</b> </h5>
+                    </label>
+                    <select class="custom-select d-block w-100" id="country" name='month' required="">
+                        <option value="">Choose...</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+
+
+                    </select>
+                </div>
+
+                <br>
+
+                <h4 class={{color}}> {{messege}} !! </h4>
+
+                <br>
+
+                <hr class="mb-4 my-3">
+                <div class="container col-md-6 ">
+                    <div class="container">
+                        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+                    </div>
+                </div>
+
+                <br>
+
+
+
+            </form>
+        </div>
+    </center>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
